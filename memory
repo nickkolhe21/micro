@@ -1,0 +1,9 @@
+MOV R0, #30H; 
+MOV R1, #40H ; 
+MOV R3, #05H ; 
+AGAIN: MOV A, @RO; 
+MOV @R1, A
+INC RO; 
+INC R1; 
+DJNZ R3, AGAIN
+END
