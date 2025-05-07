@@ -1,0 +1,40 @@
+#include<p18f4550.h>
+#pragma config FOSC = HS
+#pragma config WDT = OFF
+#pragma config LVP = OFF
+#pragma config PBADEN = OFF
+void myMsDelay (unsigned int time)
+{
+unsigned int i, j;
+for ( i = 0 ; i < time; (++)
+for(j=0; j < 275 ++);
+void main()
+{
+TRISCbits.TRISC2 = 0;
+TRISCbits TRISC6 = 0;
+TRISCbits.TRISC7=0;
+PR * 2 = 0 * 7F ;
+CCPR1L = 0 * 12 ;
+CCP1CON J = 0 * 3C
+T2CON = 0x07;
+myMsDelay(50); CCPR1L = 0 * 7F ;
+myMsDelay(50);
+PORTCbits.RC6 = 1;
+PORTCbits.RC7 = 0 ;
+while(1)
+{
+CCPR1L = 0x0F;
+myMsDelay(50);
+CCPR1L = 0x1F;
+myMsDelay(50);
+CCPR1L=0x2F;
+myMsDelay(50);
+CCPR1L = 0x3F;
+myMsDelay(50);
+CCPR1L = 0x4F;
+myMsDelay(50);
+CCPR1L = 0x5F;
+myMsDelay(50);
+CCPR1L0x6F;
+}
+}
